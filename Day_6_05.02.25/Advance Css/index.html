@@ -1,0 +1,30 @@
+<!-- Assignment 2  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Assignment two Form </title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form >
+            <h2>Contact Us</h2>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter your name" >
+            <br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email" >
+            <br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{5}" placeholder="Enter your phone number" >
+            <br>
+            <label for="Message">Message:</label><br>
+            <textarea placeholder="Enter Your Message"name="Message" id="Message" cols="30" rows="10" maxlength="200" required></textarea>
+            <br>
+            <input type="submit" value="Send Message" id="submit">
+        </form>
+    </div>
+</body>
+</html>
