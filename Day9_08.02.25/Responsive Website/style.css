@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url(./fonts/Satoshi-Regular.otf);
+}
+@font-face {
+  font-family: "Chillax Light";
+  src: url(./fonts/Chillax-Light.otf);
+}
+@font-face {
+  font-family: "Gambetta";
+  src: url(./fonts/Gambetta-Regular.otf);
+}
+@font-face {
+  font-family: "Miama";
+  src: url(./fonts/Miama-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +47,7 @@ nav {
   align-items: center;
   position: sticky;
   top: 0 !important;
+  overflow: hidden;
 }
 nav .navigation {
   display: flex;
@@ -38,16 +55,18 @@ nav .navigation {
   align-items: center;
   gap: 1.5rem;
   padding: 1rem;
-  background-color: #181716;
+  background-color: rgba(218, 197, 167, 0.05);
   width: 40%;
   height: 70px;
   margin-top: 2rem;
   border: 0.01px solid rgba(218, 197, 167, 0.0823529412);
   border-radius: 3px;
   z-index: 100;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
 }
 nav .navigation h1 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 200;
   text-transform: uppercase;
   transition: all ease-in 0.3s;
@@ -63,8 +82,16 @@ nav .navigation h2 {
   cursor: pointer;
 }
 
+.talk {
+  background-color: #DAC5A7;
+  color: black;
+  padding: 0.5rem 1rem;
+  opacity: 1;
+  border-radius: 2px;
+}
+
 .section1 {
-  margin: 2rem 1rem;
+  margin: -4.6rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,6 +279,7 @@ nav .navigation h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
 .section4 .work-container .heading h1 {
   font-size: 4rem;
@@ -277,15 +305,17 @@ nav .navigation h2 {
   bottom: 2rem;
   left: 2rem;
   right: 2rem;
-  background-color: #191512;
-  opacity: 0.9;
+  background-color: rgba(25, 21, 18, 0.1803921569);
+  opacity: 1;
   width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.7rem 2rem;
   border-radius: 2px;
   border: 0.01px solid rgba(218, 197, 167, 0.0823529412);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 .section4 .work-container .image-container .details h1 {
   font-size: 2rem;
@@ -293,6 +323,29 @@ nav .navigation h2 {
 }
 .section4 .work-container .image-container .details h2 {
   font-weight: 400;
+}
+
+.section5 {
+  margin: 6rem 0 0 0;
+}
+.section5 h1 {
+  font-size: 6rem !important;
+}
+.section5 h2 {
+  font-size: 5.5rem !important;
+}
+.section5 p {
+  font-size: 1.5rem !important;
+}
+.section5 .my_service {
+  flex-direction: column !important;
+  gap: 1rem;
+}
+
+.line {
+  width: 0.5px;
+  height: 50px;
+  background-color: rgba(218, 197, 167, 0.2901960784);
 }
 
 footer {
@@ -331,6 +384,10 @@ footer p {
 footer p a {
   color: #DAC5A7;
 }
+footer .talk {
+  font-size: 1.3rem;
+  padding-left: 1.8rem;
+}
 
 @media (min-width: 1024px) {
   .section1 img {
@@ -366,7 +423,7 @@ footer p a {
   .section4 .work-container .heading {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 2rem 6rem;
   }
   .section4 .work-container .heading h1 {
     font-size: 3rem;
@@ -401,5 +458,8 @@ footer p a {
   }
   footer p {
     margin-top: 3.5rem;
+  }
+  footer .talk {
+    margin-top: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
