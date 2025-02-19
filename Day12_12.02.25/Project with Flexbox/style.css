@@ -387,6 +387,7 @@ footer .copyright p a {
     padding-bottom: 4rem;
   }
   .section3 .left {
+    height: 100%;
     width: 30%;
     position: sticky;
     top: 0;
