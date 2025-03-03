@@ -147,15 +147,29 @@
 
 //20 is though
 
-//Assignment 23
-var num = prompt("Enter Your String :")
-var arr=[];
-for(var i in num){
-    if(num[i]==num[i].toLowerCase()){
-        arr.push(num[i].toUpperCase())
+// //Assignment 23
+// var num = prompt("Enter Your String :")
+// var arr=[];
+// for(var i in num){
+//     if(num[i]==num[i].toLowerCase()){
+//         arr.push(num[i].toUpperCase())
+//     }
+//     if(num[i]==num[i].toUpperCase()){
+//         arr.push(num[i].toLowerCase())
+//     }
+// }
+// console.log(arr.toString().replaceAll(',',''));
+
+//Assignment 24
+
+var arr= [10,11,12,13,14,15,17];
+var len = arr.length;
+for(var i=arr[0],j=0;i<=arr[len-1];i++,j++){
+    // console.log(i +' = '+ arr[j]);
+    
+    if(i!=arr[j]){
+        console.log(i); 
+        break;
     }
-    if(num[i]==num[i].toUpperCase()){
-        arr.push(num[i].toLowerCase())
-    }
+    
 }
-console.log(arr.toString().replaceAll(',',''));
