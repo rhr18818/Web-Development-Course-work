@@ -137,10 +137,25 @@
 // }
 // //Assignment 18
 
+// var num = prompt("Enter Your String :")
+// var arr=[]
+// for(var i=num.length-1;i>=0;i--){
+//         arr.push(num[i]);
+//         console.log(num[i]);    
+// }
+// console.log(arr.toString().replaceAll(',',''));
+
+//20 is though
+
+//Assignment 23
 var num = prompt("Enter Your String :")
-var arr=[]
-for(var i=num.length-1;i>=0;i--){
-        arr.push(num[i]);
-        console.log(num[i]);    
+var arr=[];
+for(var i in num){
+    if(num[i]==num[i].toLowerCase()){
+        arr.push(num[i].toUpperCase())
+    }
+    if(num[i]==num[i].toUpperCase()){
+        arr.push(num[i].toLowerCase())
+    }
 }
 console.log(arr.toString().replaceAll(',',''));
