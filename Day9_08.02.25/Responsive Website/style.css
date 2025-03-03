@@ -435,25 +435,9 @@ nav .navigation h2 {
   grid-column-start: 1;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-left: 2rem;
   width: 0.5px;
   height: inherit;
   background-color: rgba(218, 197, 167, 0.2901960784);
-}
-.section6 .rows .line .my_service {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background-color: #23211E;
-  border-radius: 50%;
-  border: 0.01px solid rgba(218, 197, 167, 0.2784313725);
-  opacity: 0.6;
 }
 .section6 .empty-container {
   display: none;
@@ -568,21 +552,23 @@ footer .talk {
   .section6 .rows .full-container {
     width: 100%;
   }
-  .section6 .rows .empty-container {
-    display: block;
-    width: 130rem;
+  .section6 .rows-right {
+    grid-template-areas: "content line empty";
   }
   .section6 .rows-right .full-container {
-    grid-column-start: 3;
+    grid-area: empty;
   }
   .section6 .rows-right .line {
-    grid-column-start: 2;
+    grid-area: line;
+  }
+  .section6 .rows-left {
+    grid-template-areas: "content line empty";
   }
   .section6 .rows-left .full-container {
-    grid-column-start: 1;
+    grid-area: content;
   }
   .section6 .rows-left .line {
-    grid-column-start: 3;
+    grid-area: line;
   }
   .extra .my_service {
     justify-content: center;

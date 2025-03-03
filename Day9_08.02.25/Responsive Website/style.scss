@@ -465,26 +465,26 @@ nav{
             grid-column-start: 1;
             display: flex;
             flex-direction: column;
-            gap: 2rem;
-            margin-left: 2rem;
+            // gap: 2rem;
+            //margin-left: 2rem;
             width:.5px;
             height: inherit;
             background-color: #dac5a74a;
-            .my_service{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    position: relative;
-                    width: 40px;
-                    height: 40px;
-                    background-color: #23211E;
-                    border-radius: 50%;
-                    border: 0.01px solid #dac5a747;
-                    opacity: .6;
+            // .my_service{
+            //         display: flex;
+            //         flex-direction: column;
+            //         justify-content: center;
+            //         align-items: center;
+            //         width: 100%;
+            //         position: relative;
+            //         width: 40px;
+            //         height: 40px;
+            //         background-color: #23211E;
+            //         border-radius: 50%;
+            //         border: 0.01px solid #dac5a747;
+            //         opacity: .6;
                 
-            }
+            // }
         }
     }
     
@@ -624,29 +624,35 @@ footer{
             //    grid-column-start: 3;
             }
 
-            .empty-container{
-                display: block;
-                width: 130rem;
-                // background-color: white;
-            }
+            // .empty-container{
+            //     display: block;
+            //     width: 130rem;
+            //     // background-color: white;
+            // }
             // .line{
             //     grid-column-start: 3;
             // }
         }
         .rows-right{
-            .full-container{
-                grid-column-start: 3;
+            grid-template-areas: "content line empty";
+            
+            .full-container {
+                grid-area: empty;
             }
-            .line{
-                grid-column-start: 2;
+            
+            .line {
+                grid-area: line;
             }
         }
-        .rows-left{
-            .full-container{
-                grid-column-start: 1;
+        .rows-left {
+            grid-template-areas: "content line empty";
+            
+            .full-container {
+                grid-area: content;
             }
-            .line{
-                grid-column-start: 3;
+            
+            .line {
+                grid-area: line;
             }
         }
     }
