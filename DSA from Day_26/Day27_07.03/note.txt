@@ -1,0 +1,2 @@
+-> today is doing basic math function practis 
+-> also revision of If else , with basic problem solving of if ,else !
