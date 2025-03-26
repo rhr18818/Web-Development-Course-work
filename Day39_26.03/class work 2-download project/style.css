@@ -1,0 +1,44 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+}
+.box{
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #71717156;
+    text-align: center;
+    background-color: white;
+    margin: 4rem;
+}
+
+
+
+button{
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+    background-color: rgb(198, 245, 26);
+    cursor: pointer;
+    font-size: .8rem;
+    margin-top: 5px;
+}
+button:hover{
+    opacity: 0.8;
+}
+.download{
+    margin-top: 1rem;
+    
+}
