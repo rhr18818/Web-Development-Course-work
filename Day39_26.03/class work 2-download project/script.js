@@ -6,6 +6,9 @@ var i=1;
 var random = 1 
 let limit = Math.floor(Math.random()*100000)
 limit = limit>15000 ? limit : 15000
+
+console.log(`Limit set to: ${limit}`); // for debugging only
+
 btn.addEventListener('click',function(){
     var int = setInterval(function(){
         text.innerText = i+'%'
@@ -31,7 +34,7 @@ btn.addEventListener('click',function(){
         }   
         console.log(random);
         
-    },Math.floor(limit/50))
+    },Math.floor(limit/100))
     // setTimeout(()=>{
     //     clearInterval(int)
     //     btn.innerText= 'Downloaded'
