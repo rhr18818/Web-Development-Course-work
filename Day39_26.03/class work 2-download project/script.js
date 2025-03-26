@@ -4,7 +4,8 @@ var grow = document.querySelector('.growth')
 
 var i=1;
 var random = 1 
-let limit = 15000
+let limit = Math.floor(Math.random()*100000)
+limit = limit>15000 ? limit : 15000
 btn.addEventListener('click',function(){
     var int = setInterval(function(){
         text.innerText = i+'%'
