@@ -1,0 +1,41 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: black;
+
+}
+img{
+    height: 20rem;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+}
+
+button{
+    background-color: rgb(26, 245, 92);
+    padding: 1rem 2rem;
+    border:  none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+button:active{
+    scale: .95;
+}
+
+svg{
+    height: 20rem;
+}
