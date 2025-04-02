@@ -1,0 +1,4 @@
+// get attribute and set attribute
+// creating an element
+// Mouse Events, keyboard Events, Scroll Events, Double click Events, Wheel Events etc
+
