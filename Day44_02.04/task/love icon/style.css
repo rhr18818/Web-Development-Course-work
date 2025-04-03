@@ -1,0 +1,57 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+/* img{
+    height: 10rem;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+    position: absolute;
+} */
+
+.image{
+    height: 10rem;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+    position: absolute;
+}
+
+button{
+    background-color: rgb(26, 245, 92);
+    padding: 1rem 2rem;
+    border:  none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    z-index: 999;
+}
+button:active{
+    scale: .95;
+}
+
+svg{
+    height: 20rem;
+}
+.container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    
+}
