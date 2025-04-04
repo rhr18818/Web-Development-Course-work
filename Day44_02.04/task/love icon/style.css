@@ -12,46 +12,51 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    /* gap: 1rem; */
     background-color: black;
-    color: white;
+    /* color: white; */
     overflow: hidden;
+    width: 100%;
 }
-/* img{
-    height: 10rem;
-    aspect-ratio: 1/1.2;
-    object-fit: cover;
-    position: absolute;
-} */
+img{
 
-.image{
-    height: 10rem;
-    aspect-ratio: 1/1.2;
-    object-fit: cover;
-    position: absolute;
-}
-
-button{
-    background-color: rgb(26, 245, 92);
-    padding: 1rem 2rem;
-    border:  none;
+    width: 100%;
     border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: white;
-    cursor: pointer;
-    z-index: 999;
-}
-button:active{
-    scale: .95;
+    object-fit: cover;
+   
 }
 
-svg{
-    height: 20rem;
-}
+
 .container{
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: .5rem;
     align-items: center;
-    
+    background:  white;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(124, 123, 123);
+    padding: .5rem .5rem 1rem .5rem;
+    position: relative;
+
 }
+
+i{
+    color: rgb(243, 6, 6);
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 1;
+    transition: all ease-in-out .3s;
+
+}
+.icon{
+    top: 17rem;
+    left: .2rem;
+    font-size: 2rem;
+    color: black;
+    transform: translate(0%,0%) scale(1);
+}
+
