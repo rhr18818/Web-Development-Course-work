@@ -46,7 +46,7 @@ nav {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  position: absolute;
+  position: sticky;
   top: 0 !important;
   z-index: 99999;
   transition: all linear 0.1s;
