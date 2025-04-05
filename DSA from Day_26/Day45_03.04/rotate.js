@@ -1,4 +1,6 @@
-var matrix = [[2,4,-1],[-10,5,11],[18,-7,6]]
+//var matrix = [[2,4,-1],[-10,5,11],[18,-7,6]]
+
+var matrix = [[1,2,3],[4,5,6],[7,8,9]]
 
 //var ans = Array.from({length: matrix[0].length},()=> Array(matrix.length))
 
