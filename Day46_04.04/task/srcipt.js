@@ -152,27 +152,134 @@ const cardsData = [
   ];
   
   var mian = document.querySelector('.main')
-  var sum = ""
 
-  cardsData.forEach((element,index) => {
-        sum+= `
-            <div class="card">
-                <h3 class="${element.status == "Online" ? "online" : "offline"}">${element.status}</h3>
-                <h5 class="rate">${element.rate}</h5>
-                <img src=${element.imageUrl} alt="">
-                <h1>${element.name}</h1>
-                <h2>${element.title}</h2>
-                <ul class="skill">
-                ${element.skills.map((skill) => `<li>${skill}</li>`).join('')}
-                    
-                </ul>
-                <p>${element.description}</p>
-                <button>Follow</button>
+  var btn = document.querySelector('.btn')
 
-            </div>
+//   btn.addEventListener('click',(elem)=> {
+//     // console.log(btn.id);
+//     // if(btn.id == 'light'){
+//     //     localStorage.setItem('theme','light')
+//     //     btn.id = 'dark'
         
-        `
-        
-  });
+//     // }else{
+//     //     localStorage.setItem('theme','dark')
+//     //     btn.id = 'light'
+    
+//     // }
+//         document.body.classList.toggle("dark");
+//   // Optional: Save theme preference to localStorage
+//         if (document.body.classList.contains("dark")) {
+//             localStorage.setItem("theme", "dark");
+//             btn.textContent = "☀ Light Mode";
+//             // btn.innerHTML = 'Light'
+//         } else {
+//             localStorage.setItem("theme", "light");
+//             btn.textContent = "🌙 Dark Mode";
+//             // btn.innerHTML = 'Light'
+//         }
+//         // if (document.body.classList.contains("dark")) {
+//         //     btn.textContent = "☀ Light Mode";
+//         //   } else {
+//         //     btn.textContent = "🌙 Dark Mode";
+//         //   }
+//   })
+//   window.addEventListener("DOMContentLoaded", () => {
+//     const savedTheme = localStorage.getItem("theme");
+//     if (savedTheme === "dark") {
+//       document.body.classList.add("dark");
+//       //btn.innerHTML = 'Light'
+//     }
+    
+//   });
 
-  mian.innerHTML =sum;
+//   if(localStorage.getItem('theme')=='dark'){
+//     document.body.classList.add("dark")
+//   }
+//   else if(localStorage.getItem('theme')=='light'){
+//     document.body.classList.remove("dark")
+//   }
+
+  function data(){
+
+    var sum = ""
+    cardsData.forEach((element,index) => {
+            sum+= `
+                <div class="card">
+                    <h3 class="${element.status == "Online" ? "online" : "offline"}">${element.status}</h3>
+                    <h5 class="rate">${element.rate}</h5>
+                    <img src=${element.imageUrl} alt="">
+                    <h1>${element.name}</h1>
+                    <h2>${element.title}</h2>
+                    <ul class="skill">
+                    ${element.skills.map((skill) => `<li>${skill}</li>`).join('')}
+                        
+                    </ul>
+                    <p>${element.description}</p>
+                    <button id="btn_${index}">${element.buttonText}</button>
+
+                </div>
+            
+            `
+            
+    });
+        mian.innerHTML =sum;
+
+}
+    data()
+
+  let click = true
+  mian.addEventListener('click',(details)=>{
+    const temp = document.getElementById(details.target.id)
+    // console.log(temp.id.split('btn_').join(''));
+    const char = temp.id.split('btn_').join('')
+    
+    if(click){
+         //cardsData[char].buttonText = 'Unfollow'
+         //console.log(cardsData);
+        
+        temp.innerHTML = 'Unfollow'
+        temp.classList.add('unfollow')
+        temp.style.backgroundColor = "white"
+        temp.style.color = "#ffb703"
+        temp.style.border = "1px solid #ffb703"
+        click = false;
+    }
+    else{
+        //cardsData[char].buttonText = 'Follow'
+        temp.innerHTML = 'Follow'
+        temp.style.backgroundColor = ""
+        temp.style.color = ""
+        temp.style.border = ""
+        click =true
+    }
+    //data()
+    
+  })
+
+//   var light = document.querySelector('#light')
+//   var dark = document.querySelector('#dark')
+
+
+
+////// here position of adding script is very important - if add before dom loading then have to use -> window.addEventlistener('DOMContentLoaded',()=>{})
+
+
+
+  btn.addEventListener('click',()=>{
+    document.body.classList.toggle('dark')
+    if(document.body.classList.contains('dark')){
+        localStorage.setItem("theme","dark")
+        btn.textContent = '☀ Light Mode'
+    }
+    else{
+        localStorage.setItem("theme","light")
+        btn.textContent = '🌙 Dark Mode'
+    }
+  })
+  if(localStorage.getItem("theme")=="dark"){
+    document.body.classList.add('dark')
+    btn.textContent = '☀ Light Mode'
+  }
+  else{
+    btn.textContent = '🌙 Dark Mode'
+  }
