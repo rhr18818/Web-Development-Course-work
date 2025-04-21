@@ -1,1 +1,7 @@
 More on  --- OOP 
+In --Js everything is Object -- so everything has prototype !!
+
+1. an prototype shared memmory space don't create new memmory each time of Object creation 
+2. For that -- whenever need to make a Object where value will be duplicated
+then use prototype -- which will not create a new memmory space !!
+
