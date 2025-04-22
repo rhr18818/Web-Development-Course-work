@@ -7,4 +7,4 @@ var removeDuplicates = function(nums) {
     return set.size
     
 };
-console.log(removeDuplicates(nums),nums);
+console.log(removeDuplicates(nums),numsYoutube DSA/LeetCode/removeduplicate.js);
