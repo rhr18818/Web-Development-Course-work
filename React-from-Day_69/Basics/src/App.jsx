@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
 
-export default function App() {
-  return (
-    <div><h1 >Hello</h1></div>
+const App = ()=>{
+  return(
+    <div><h1 style={{color: 'tomato', textAlign: 'center'}}>Hello</h1></div>
   )
 }
+//console.log("checking");
+
+
+export const a = "Hello"
+export const b = "World"
+export default App
