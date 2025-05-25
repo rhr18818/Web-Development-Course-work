@@ -10,7 +10,7 @@ function partition(arr,s,l){
     // }
     // swap(arr,s,j)
     // return j
-    
+
     //taken last index as pivot
     let pivot = arr[l]
     let i=s-1;
@@ -32,7 +32,7 @@ function swap(arr,i,j){
 function quickSort(arr,s,l){
     if(s>=l) return
     let p = partition(arr,s,l)
-    quickSort(arr,s,p)
+    quickSort(arr,s,p-1)/// p-1 is necessary for online compiler
     quickSort(arr,p+1,l)
 }
 
