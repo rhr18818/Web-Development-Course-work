@@ -1,2 +1,10 @@
 ---> oop concept for DSA !!
 ---> theory of oop
+
+---> iheritance is === js prototype == object
+
+
+### prototype is a object ---> that is present in by default in every js 
+    element !!
+ex: let arr = [ 1,2,3]
+    console.log(arr)---> here also can see the prototype---it contains all the ( push ,pop, reduce....etc) function
