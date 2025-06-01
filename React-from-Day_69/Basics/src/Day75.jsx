@@ -14,9 +14,9 @@ const Day75 = () => {
   
   return (
     <>
-        <Create users={users} setusers={setusers}/>
+        <Create />
         <hr />
-        <Read users={users} />
+        <Read users={users} setusers={setusers}/>
     </>
   )
 }

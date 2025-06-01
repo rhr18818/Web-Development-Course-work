@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
-const Create = (props) => {
-    console.log(props);
-    const users = props.users
-    const setusers = props.setusers
-    
+const Create = () => {
+    // console.log(props);
+    // const users = props.users
+    // const setusers = props.setusers
+
     const [Name, setName] = useState("")
     const [Age, setAge] = useState(18)
     //   const changeHandler = (e)=>{
