@@ -2,7 +2,7 @@
 const View = (props) => {
     const todos = props.todos
     const renderTodo = todos.map(todo =>{
-        return <li key={todo.id}>{todo.title}</li>
+        return <li style={{color: todo.isCompleted ? 'green': 'tomato'}} key={todo.id}>{todo.title}</li>
     })
   return (
     <>

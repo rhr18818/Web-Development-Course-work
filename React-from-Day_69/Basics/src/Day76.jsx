@@ -5,15 +5,12 @@ import View from './components/View';
 
 const Day76 = () => {
     const [todos, settodos] = useState([
-        {id:1,title:"Something.......",isCompleted: false}
+        {id:1,title:"Something.......",isCompleted: true}
     ])
-
-    
     console.log(todos);
-
-    
   return (
     <>
+        <h1 >To-Do</h1>
         <Make todos={todos} settodos={settodos}/>
         <br />
         <hr />

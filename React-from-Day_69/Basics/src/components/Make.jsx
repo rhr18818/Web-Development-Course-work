@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid'
 const Make = (props) => {
     const todos = props.todos
     const settodos = props.settodos
-    
+
     const [Title, setTitle] = useState('')
     function submitHandler(e){
         e.preventDefault()
@@ -24,7 +24,7 @@ const Make = (props) => {
     }
   return (
     <>
-    <h1>To-Do</h1>
+    
         <h2>Create Task</h2>
         <form onSubmit={submitHandler}>
             <input type="text" 
