@@ -22,6 +22,15 @@ const Make = (props) => {
         //settodos([...todos,newTodo])
         
     }
+
+    const buttonCss = {
+        border:"none",
+        background:"blue",
+        padding: "6px 10px",
+        borderRadius:"5px",
+        color:"white",
+        fontWeight:"bold"
+    }
   return (
     <>
     
@@ -35,7 +44,7 @@ const Make = (props) => {
             
             <br />
 
-            <button>Create todo</button>
+            <button style={buttonCss}>Create todo</button>
         </form>
     </>
   )
