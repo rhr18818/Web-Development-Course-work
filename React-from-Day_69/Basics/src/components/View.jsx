@@ -1,5 +1,5 @@
 import "./View.css"
-
+import style from "./View.module.css"
 const View = (props) => {
     const todos = props.todos
     const settodos = props.settodos
@@ -31,7 +31,7 @@ const View = (props) => {
     
   return (
     <>
-        <h2 className="h2Color">Created-Task's</h2>
+        <h2 className={style.h2Color}>Created-Task's</h2>
         <ul>
             {renderTodo}
         </ul>
