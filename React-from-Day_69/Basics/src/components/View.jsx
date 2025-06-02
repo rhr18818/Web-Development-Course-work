@@ -9,8 +9,9 @@ const View = (props) => {
         settodos(filteredTodos)
     }
     function allClear(){
-       const alldelete = todos.filter(todo => todo.id == 0)/// not working ---> empty string put in settodos
-        settodos(alldelete)
+        settodos([])
+    //    const alldelete = todos.filter(todo => todo.id == 0)/// not working ---> empty string put in settodos
+    //     settodos(alldelete)
     }
     const renderTodo = todos.map(todo =>{
         return <li style={{color: todo.isCompleted ? 'green': 'tomato'}} key={todo.id}>
