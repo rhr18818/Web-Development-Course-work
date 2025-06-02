@@ -9,13 +9,16 @@ const Day77 = () => {
     ])
     console.log(todos);
   return (
-    <>
-        <h1 >To-Do</h1>
+    <div className='w-screen h-screen p-6 bg-gray-800'>
+
+        <h1 className='text-4xl mb-[3rem] text-center text-amber-400 font-bold border-b-1 pb-3'>To-Do</h1> 
+        <div className='flex justify-between'>
         <Make todos={todos} settodos={settodos}/>
         <br />
         <hr />
         <View todos={todos} settodos={settodos}/>
-    </>
+        </div>
+    </div>
   )
 }
 

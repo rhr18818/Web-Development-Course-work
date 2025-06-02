@@ -1,5 +1,5 @@
 import "./View.css"
-import style from "./View.module.css"
+// import style from "./View.module.css"
 const View = (props) => {
     const todos = props.todos
     const settodos = props.settodos
@@ -30,15 +30,16 @@ const View = (props) => {
     
     
   return (
-    <>
-        <h2 className={style.h2Color}>Created-Task's</h2>
+    <div className="w-[40%]">
+        {/* <h2 className={style.h2Color}>Created-Task's</h2> */}
+        <h2 className="'text-white text-2xl font-semibold mb-4 text-white border-b-1 pb-3">Created-Task's</h2>
         <ul>
             {renderTodo}
         </ul>
 
         <br />
         <button style={buttonCss} onClick={allClear}> ! All Clear</button>
-    </>
+    </div>
   )
 }
 
