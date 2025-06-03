@@ -7,11 +7,12 @@ import { A } from "./Day72.jsx"
 import Day75 from "./Day75.jsx"
 import Day76 from "./Day76.jsx"
 import Day77 from "./Day77.jsx"
+import Wrapper from "./components/Wrapper.jsx"
 
 
 createRoot(document.getElementById("root")).render(
 <>
-    <Day77></Day77>
+    <Wrapper App={<Day77/>}/>
     <ToastContainer  position="top-center"/>
 
 </>
