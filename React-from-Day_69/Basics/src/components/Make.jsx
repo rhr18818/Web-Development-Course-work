@@ -45,7 +45,7 @@ const Make = (props) => {
             
             <br />
 
-            <button className='bg-orange-400 hover:bg-amber-600 py-2 px-4 font-semibold text-white text-[1rem] rounded'>Create todo</button>
+            <button className='cursor-pointer bg-orange-400 hover:bg-amber-600 py-1.5 px-4 font-semibold text-white text-[1rem] rounded'>Create todo</button>
         </form>
     </div>
   )

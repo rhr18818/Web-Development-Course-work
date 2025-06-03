@@ -15,30 +15,31 @@ const View = (props) => {
     //     settodos(alldelete)
     }
     const renderTodo = todos.map(todo =>{
-        return <li style={{color: todo.isCompleted ? 'green': 'tomato'}} key={todo.id}>
-                {todo.title} <span style={{cursor:"pointer"}} onClick={()=>deleteHandler(todo.id)}> | ×Delete</span>
+        return <li className="flex justify-between items-center py-1 px-4 bg-gray-700 rounded-md my-1.5" key={todo.id}>
+                {todo.title} <span className="cursor-pointer py-[4px] px-4 bg-red-500 rounded font-thin" onClick={()=>deleteHandler(todo.id)}>Delete</span>
             </li>
     })
-    const buttonCss = {
-        border:"none",
-        background:"tomato",
-        padding: "6px 20px",
-        borderRadius:"2px",
-        color:"white",
-        fontWeight:"bold"
-    }
+    // const buttonCss = {
+    //     border:"none",
+    //     background:"tomato",
+    //     padding: "6px 20px",
+    //     borderRadius:"2px",
+    //     color:"white",
+    //     fontWeight:"bold"
+    // }
     
     
   return (
     <div className="w-[40%]">
         {/* <h2 className={style.h2Color}>Created-Task's</h2> */}
         <h2 className="'text-white text-2xl font-semibold mb-4 text-white border-b-1 pb-3">Created-Task's</h2>
-        <ul>
+        <ul className="py-2 px-3 border-1 rounded border-gray-600 font-medium text-base text-white">
             {renderTodo}
         </ul>
 
         <br />
-        <button style={buttonCss} onClick={allClear}> ! All Clear</button>
+        {/* <button style={buttonCss} onClick={allClear}> ! All Clear</button> */}
+        <button className='cursor-pointer bg-red-600 hover:bg-red-700 py-1.5 px-6 font-semibold text-white text-[1rem] rounded' onClick={allClear}> ! All Clear</button>
     </div>
   )
 }
