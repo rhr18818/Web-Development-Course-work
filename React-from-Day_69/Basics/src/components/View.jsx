@@ -1,3 +1,4 @@
+import { toast } from "react-toastify"
 import "./View.css"
 // import style from "./View.module.css"
 const View = (props) => {
@@ -8,6 +9,7 @@ const View = (props) => {
         //console.log("Delete Pressed..! ",todos.filter(todo => todo.id != id));
         const filteredTodos = todos.filter(todo => todo.id != id)
         settodos(filteredTodos)
+        toast.error("Task Deleted")
     }
     function allClear(){
         settodos([])
