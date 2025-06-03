@@ -30,9 +30,9 @@ const View = (props) => {
     
     
   return (
-    <div className="w-[40%]">
+    <div className="w-full md:w-[40%]">
         {/* <h2 className={style.h2Color}>Created-Task's</h2> */}
-        <h2 className="'text-white text-2xl font-semibold mb-4 text-white border-b-1 pb-3">Created-Task's</h2>
+        <h2 className="'text-white text-2xl font-semibold mb-4 text-white border-b-1 pb-3"><span className='text-orange-400' >Created</span>-Task's</h2>
         <ul className="py-2 px-3 border-1 rounded border-gray-600 font-medium text-base text-white">
             {renderTodo}
         </ul>

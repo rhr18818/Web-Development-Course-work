@@ -32,15 +32,15 @@ const Make = (props) => {
     //     fontWeight:"bold"
     // }
   return (
-    <div className='w-[60%]'>
-    
+    <div className='w-full mb-4 md:w-[60%] md:mb-0'>
+
         <h2 className='text-white text-2xl font-semibold mb-4'>Create <span className='text-orange-400' >Task</span></h2>
         <form onSubmit={submitHandler}>
             <input type="text" 
             placeholder='title'
             onChange={(e)=>setTitle(e.target.value)}
             value={Title}
-            className='p-2 bg-white w-2/3 rounded outline-1 font-medium text-[1rem] focus:outline-orange-400'
+            className='p-2 bg-white w-full md:w-2/3 rounded outline-1 font-medium text-[1rem] focus:outline-orange-400'
             /><br />
             
             <br />
