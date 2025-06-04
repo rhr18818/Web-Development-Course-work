@@ -10,17 +10,24 @@ import Day77 from "./Day77.jsx"
 import Day78 from "./Day78.jsx"
 import Day81 from "./Day81.jsx"
 import Wrapper from "./components/Wrapper.jsx"
+import Day81_router from "./Day81_router.jsx"
+import { BrowserRouter } from "react-router-dom"
 
 
 
 createRoot(document.getElementById("root")).render(
-<>
-    <Wrapper>
-        <Day81></Day81>
-        <ToastContainer  position="top-center"/>
-    </Wrapper>
-   
-
-</>
+    <BrowserRouter>
+        <Day81_router/>
+    </BrowserRouter>
 )
+
+// createRoot(document.getElementById("root")).render(
+// <>
+//     <Wrapper>
+//         <Day81></Day81>
+//         <ToastContainer  position="top-center"/>
+//     </Wrapper>
+// </>
+// )
+
 
