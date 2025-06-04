@@ -3,11 +3,13 @@ import React from 'react'
 import { nanoid } from 'nanoid'
 import { useForm } from 'react-hook-form'
 import { toast } from 'react-toastify'
+import { useContext } from 'react'
+import { todoContext } from './Wrapper'
 
-const Make = (props) => {
-    const todos = props.todos
-    const settodos = props.settodos
-
+const Make = () => {
+    // const todos = props.todos
+    // const settodos = props.settodos
+    const [todos, settodos] = useContext(todoContext)
     // const [Title, setTitle] = useState('')
 
     const{
@@ -23,7 +25,7 @@ const Make = (props) => {
         
         data.isCompleted = false
         data.id = nanoid()
-        console.log(data);
+        //console.log(data);
       
          // const newTodo = {
         //     id : nanoid(),
@@ -50,7 +52,7 @@ const Make = (props) => {
     //     fontWeight:"bold"
     // }
 
-    console.log(errors);
+    //console.log(errors);
     
   return (
     <div className='w-full mb-4 md:w-[60%] md:mb-0'>

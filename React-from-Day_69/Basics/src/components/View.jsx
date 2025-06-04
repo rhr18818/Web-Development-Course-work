@@ -1,9 +1,16 @@
 import { toast } from "react-toastify"
 import "./View.css"
+import { useContext } from "react"
+import { todoContext } from "./Wrapper"
 // import style from "./View.module.css"
-const View = (props) => {
-    const todos = props.todos
-    const settodos = props.settodos
+const View = () => {
+    // const todos = props.todos
+    // const settodos = props.settodos
+
+    const s = useContext(todoContext)
+    console.log(s);
+    const [todos, settodos] = useContext(todoContext)
+    
 
     const deleteHandler = (id)=>{
         //console.log("Delete Pressed..! ",todos.filter(todo => todo.id != id));
