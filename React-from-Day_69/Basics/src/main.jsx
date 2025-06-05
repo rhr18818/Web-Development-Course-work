@@ -13,13 +13,18 @@ import Wrapper from "./components/Wrapper.jsx"
 import Day81_router from "./Day81_router.jsx"
 import { BrowserRouter } from "react-router-dom"
 import Day82 from "./Day82.jsx"
+import Day83 from "./Day83.jsx"
+import Recipecontext from "./context/Recipecontext.jsx"
 
 
 
 createRoot(document.getElementById("root")).render(
-    <BrowserRouter>
-        <Day82/>
-    </BrowserRouter>
+    <Recipecontext>
+        <BrowserRouter>
+            <Day83/>
+            <ToastContainer/>
+        </BrowserRouter>
+    </Recipecontext>
 )
 
 // createRoot(document.getElementById("root")).render(
