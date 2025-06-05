@@ -15,13 +15,14 @@ import { BrowserRouter } from "react-router-dom"
 import Day82 from "./Day82.jsx"
 import Day83 from "./Day83.jsx"
 import Recipecontext from "./context/Recipecontext.jsx"
+import Day87 from "./Day87.jsx"
 
 
 
 createRoot(document.getElementById("root")).render(
     <Recipecontext>
         <BrowserRouter>
-            <Day83/>
+            <Day87/>
             <ToastContainer/>
         </BrowserRouter>
     </Recipecontext>
