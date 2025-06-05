@@ -12,12 +12,13 @@ import Day81 from "./Day81.jsx"
 import Wrapper from "./components/Wrapper.jsx"
 import Day81_router from "./Day81_router.jsx"
 import { BrowserRouter } from "react-router-dom"
+import Day82 from "./Day82.jsx"
 
 
 
 createRoot(document.getElementById("root")).render(
     <BrowserRouter>
-        <Day81_router/>
+        <Day82/>
     </BrowserRouter>
 )
 
