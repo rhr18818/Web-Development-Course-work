@@ -10,6 +10,21 @@ class_data = []
 class_no = 1
 current_date = start_date
 
+#updating ---
+while class_no <= 25 :
+    if current_date.weekday() in weekdays:
+        class_data.append({
+            "class_no": f"Day_{class_no}",
+            "date": current_date.strftime("%d-%m-%Y"),
+            "topic": "Basic",
+            "notes": "🖊️ Took handwritten notes...!",
+            "attended": True,
+            "needs_revision": False,
+            "gap_covered": ""
+        })
+        class_no += 1
+    current_date += timedelta(days=1)
+
 # Create 107 class entries
 while class_no <= 107 and current_date <= today:
     if current_date.weekday() in weekdays:
