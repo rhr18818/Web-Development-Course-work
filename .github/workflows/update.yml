@@ -1,0 +1,31 @@
+name: Update Daily Tracker
+
+on:
+  schedule:
+    - cron: '0 12 * * *'   # Runs daily at 12:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Run script
+      run: |
+        python generate_readme.py
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add README.md
+        git commit -m "Auto-update README with tracker" || echo "No changes to commit"
+        git push
