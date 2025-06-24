@@ -2,31 +2,31 @@
 
 | # | Date | 🏷️ Topic | 🎥 Attended? | 🔁 Revision? | 📝 Notes | ⏳ Gap Covered? |
 |:---:|:----:|:--------:|:-----------:|:-----------:|:--------:|:--------------:|
-| Day_1 | 25-01-2025 | DSA | ✅ | ❌ |  |  |
-| Day_2 | 27-01-2025 | DSA | ✅ | ❌ |  |  |
-| Day_3 | 28-01-2025 | DSA | ✅ | ❌ |  |  |
-| Day_4 | 29-01-2025 | DSA | ✅ | ❌ |  |  |
-| Day_5 | 30-01-2025 | DSA | ✅ | ❌ |  |  |
-| Day_6 | 31-01-2025 | DSA | ✅ | ❌ |  |  |
-| Day_7 | 01-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_8 | 03-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_9 | 04-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_10 | 05-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_11 | 06-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_12 | 07-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_13 | 08-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_14 | 10-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_15 | 11-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_16 | 12-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_17 | 13-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_18 | 14-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_19 | 15-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_20 | 17-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_21 | 18-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_22 | 19-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_23 | 20-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_24 | 21-02-2025 | DSA | ✅ | ❌ |  |  |
-| Day_25 | 22-02-2025 | DSA | ✅ | ❌ |  |  |
+| Day_1 | 25-01-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_2 | 27-01-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_3 | 28-01-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_4 | 29-01-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_5 | 30-01-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_6 | 31-01-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_7 | 01-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_8 | 03-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_9 | 04-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_10 | 05-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_11 | 06-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_12 | 07-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_13 | 08-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_14 | 10-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_15 | 11-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_16 | 12-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_17 | 13-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_18 | 14-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_19 | 15-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_20 | 17-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_21 | 18-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_22 | 19-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_23 | 20-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_24 | 21-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
+| Day_25 | 22-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
 | Day_26 | 24-02-2025 | DSA | ✅ | ❌ |  |  |
 | Day_27 | 25-02-2025 | DSA | ✅ | ❌ |  |  |
 | Day_28 | 26-02-2025 | DSA | ✅ | ❌ |  |  |
