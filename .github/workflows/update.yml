@@ -2,7 +2,7 @@ name: Update Daily Tracker
 
 on:
   schedule:
-    - cron: '0 19 * * *'   # Runs daily at 12:00 UTC
+    - cron: '0 19 * * *'   # Runs daily at 12:00 UTC--> +6 = Bdt time==> 1.00 AM
   workflow_dispatch:
 
 jobs:
