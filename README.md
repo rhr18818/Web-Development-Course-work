@@ -94,18 +94,21 @@
 | Day_90 | 09-05-2025 | DSA | ✅ | ❌ |  |  |
 | Day_91 | 10-05-2025 | DSA | ✅ | ❌ |  |  |
 | Day_92 | 12-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_93 | 13-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_94 | 14-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_95 | 15-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_96 | 16-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_97 | 17-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_98 | 19-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_99 | 20-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_100 | 21-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_101 | 22-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_102 | 23-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_103 | 24-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_104 | 26-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_105 | 27-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_106 | 28-05-2025 | DSA | ✅ | ❌ |  |  |
-| Day_107 | 29-05-2025 | DSA | ✅ | ❌ |  |  |
+| Day_93 | 02-06-2025 | React | ❌ | ❌ |  |  |
+| Day_94 | 03-06-2025 | React | ❌ | ❌ |  |  |
+| Day_95 | 04-06-2025 | React | ❌ | ❌ |  |  |
+| Day_96 | 05-06-2025 | DSA | ✅ | ✅ | Linklist Basics |  |
+| Day_97 | 06-06-2025 | DSA | ✅ | ✅ | More on Linklist |  |
+| Day_98 | 09-06-2025 | React | ❌ | ❌ |  |  |
+| Day_99 | 10-06-2025 | React | ❌ | ❌ |  |  |
+| Day_100 | 11-06-2025 | React | ❌ | ❌ |  |  |
+| Day_101 | 12-06-2025 | DSA | ✅ | ✅ | LeetCode Problem on LinkList |  |
+| Day_102 | 13-06-2025 | DSA | ❌ | ❌ |  |  |
+| Day_103 | 14-06-2025 | DSA | ✅ | ❌ | Stack and Queue -Basics |  |
+| Day_104 | 16-06-2025 | React | ❌ | ❌ |  |  |
+| Day_105 | 17-06-2025 | React | ❌ | ❌ |  |  |
+| Day_106 | 18-06-2025 | React | ❌ | ❌ |  |  |
+| Day_107 | 19-06-2025 | Motivation | ✅ | ❌ | Project Given - 1. Os 2.Notion 3.Management |  |
+| Day_108 | 20-06-2025 | Motivation | ✅ | ❌ |  |  |
+| Day_109 | 23-06-2025 | DSA | ❌ | ❌ | Stack and Queue - Problems |  |
+| Day_110 | 24-06-2025 | DSA | ✅ | ✅ | Stack and Queue - Problems |  |
