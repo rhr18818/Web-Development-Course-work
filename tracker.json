@@ -986,7 +986,7 @@
     "topic": "DSA",
     "notes": "Stack and Queue - Problems",
     "attended": true,
-    "needs_revision": false,
+    "needs_revision": true,
     "gap_covered": ""
   }
 ]
