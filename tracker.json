@@ -955,9 +955,36 @@
   },
   {
     "class_no": "Day_107",
-    "date": "29-05-2025",
-    "topic": "DSA",
+    "date": "19-06-2025",
+    "topic": "Motivation",
+    "notes": "Project Given - 1. Os 2.Notion 3.Management",
+    "attended": true,
+    "needs_revision": false,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_108",
+    "date": "20-06-2025",
+    "topic": "Motivation",
     "notes": "",
+    "attended": true,
+    "needs_revision": false,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_109",
+    "date": "23-06-2025",
+    "topic": "DSA",
+    "notes": "Stack and Queue - Problems",
+    "attended": false,
+    "needs_revision": false,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_110",
+    "date": "24-06-2025",
+    "topic": "DSA",
+    "notes": "Stack and Queue - Problems",
     "attended": true,
     "needs_revision": false,
     "gap_covered": ""
