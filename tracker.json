@@ -988,5 +988,14 @@
     "attended": true,
     "needs_revision": true,
     "gap_covered": ""
+  },
+  {
+    "class_no": "Day_111",
+    "date": "25-06-2025",
+    "topic": "DSA",
+    "notes": "Advance Recursion..",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
   }
 ]
