@@ -112,3 +112,4 @@
 | Day_108 | 20-06-2025 | Motivation | ✅ | ❌ |  |  |
 | Day_109 | 23-06-2025 | DSA | ❌ | ❌ | Stack and Queue - Problems |  |
 | Day_110 | 24-06-2025 | DSA | ✅ | ✅ | Stack and Queue - Problems |  |
+| Day_111 | 25-06-2025 | DSA | ❌ | ✅ | Advance Recursion.. |  |
