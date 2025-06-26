@@ -1,2 +1,14 @@
 1. Animation 
 2. Ui and UX --!
+
+Animation : -> Css Animation, Gsap , Framer Motion, Lenis/locomotive, Swiper Js , Lottie , React Bits
+
+3-D Animation : Three js , shedder and Glsl 
+
+
+Resources : 
+1:
+2:
+3: 
+
+Spline.design--> 3D interaction Design
