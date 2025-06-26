@@ -997,5 +997,14 @@
     "attended": false,
     "needs_revision": true,
     "gap_covered": ""
+  },
+  {
+    "class_no": "Day_112",
+    "date": "26-06-2025",
+    "topic": "Animations",
+    "notes": "Theory--->Ui,Ux,Gsap,FramerMotion,Lenis/Locomotive,SwiperJS",
+    "attended": false,
+    "needs_revision": false,
+    "gap_covered": ""
   }
 ]
