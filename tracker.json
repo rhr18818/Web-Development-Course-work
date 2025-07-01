@@ -1010,10 +1010,38 @@
   {
     "class_no": "Day_113",
     "date": "27-06-2025",
+    "topic": "DSA",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_114",
+    "date": "28-06-2025",
     "topic": "Motivation",
     "notes": "",
     "attended": false,
     "needs_revision": false,
     "gap_covered": ""
+  },
+  {
+    "class_no": "Day_115",
+    "date": "30-06-2025",
+    "topic": "Backend",
+    "notes": "Not taken",
+    "attended": true,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_116",
+    "date": "01-07-2025",
+    "topic": "Backend",
+    "notes": "Not taken",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
   }
+
 ]
