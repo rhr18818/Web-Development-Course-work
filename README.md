@@ -117,4 +117,6 @@
 | Day_113 | 27-06-2025 | DSA | ❌ | ✅ |  |  |
 | Day_114 | 28-06-2025 | Motivation | ❌ | ❌ |  |  |
 | Day_115 | 30-06-2025 | Backend | ✅ | ✅ | Not taken |  |
-| Day_116 | 01-07-2025 | Backend | ❌ | ✅ | Not taken |  |
+| Day_116 | 01-07-2025 | Backend | ❌ | ✅ |  |  |
+| Day_117 | 02-07-2025 | Backend | ❌ | ✅ |  |  |
+| Day_118 | 03-07-2025 | Backend | ❌ | ✅ |  |  |
