@@ -1038,7 +1038,25 @@
     "class_no": "Day_116",
     "date": "01-07-2025",
     "topic": "Backend",
-    "notes": "Not taken",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_117",
+    "date": "02-07-2025",
+    "topic": "Backend",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_118",
+    "date": "03-07-2025",
+    "topic": "Backend",
+    "notes": "",
     "attended": false,
     "needs_revision": true,
     "gap_covered": ""
