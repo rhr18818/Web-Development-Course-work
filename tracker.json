@@ -1060,6 +1060,15 @@
     "attended": false,
     "needs_revision": true,
     "gap_covered": ""
+  },
+  {
+    "class_no": "Day_119",
+    "date": "04-07-2025",
+    "topic": "DSA",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
   }
 
 ]
