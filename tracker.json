@@ -1065,8 +1065,17 @@
     "class_no": "Day_119",
     "date": "04-07-2025",
     "topic": "DSA",
-    "notes": "",
+    "notes": "Advance Recursion..",
     "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_120",
+    "date": "05-07-2025",
+    "topic": "DSA",
+    "notes": "Advance Recursion..",
+    "attended": true,
     "needs_revision": true,
     "gap_covered": ""
   }
