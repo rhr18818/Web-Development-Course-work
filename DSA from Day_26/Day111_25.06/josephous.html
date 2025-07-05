@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josephus Problem Implementations</title>
+    <style>
+        body {
+            font-family: 'Monaco', 'Menlo', monospace;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #4a5568;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .method {
+            background: #f8fafc;
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .method h2 {
+            color: #2d3748;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .badge {
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        
+        pre {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .demo-section {
+            background: #edf2f7;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+            border: 2px solid #cbd5e0;
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .input-group label {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-weight: bold;
+            color: #4a5568;
+        }
+        
+        input, select {
+            padding: 10px;
+            border: 2px solid #cbd5e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .results {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .highlight {
+            background: #fef5e7;
+            border: 2px solid #f6ad55;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        
+        .visualization {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+            justify-content: center;
+        }
+        
+        .person {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .alive {
+            background: #48bb78;
+            animation: pulse 2s infinite;
+        }
+        
+        .eliminated {
+            background: #f56565;
+            opacity: 0.5;
+            transform: scale(0.8);
+        }
+        
+        .survivor {
+            background: #ed8936;
+            animation: glow 1s infinite alternate;
+            transform: scale(1.2);
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(237, 137, 54, 0.5); }
+            100% { box-shadow: 0 0 20px rgba(237, 137, 54, 0.8); }
+        }
+        
+        .complexity {
+            background: #e6fffa;
+            border: 2px solid #38b2ac;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        
+        .step-by-step {
+            background: #f0fff4;
+            border: 2px solid #68d391;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Josephus Problem Implementations</h1>
+        
+        <div class="method">
+            <h2>1. Recursive Solution <span class="badge">Classic</span></h2>
+            <p>The most straightforward approach using recursion based on the mathematical recurrence relation.</p>
+            <pre><code>// Recursive solution for general k
+function josephusRecursive(n, k) {
+    if (n === 1) return 0;
+    return (josephusRecursive(n - 1, k) + k) % n;
+}
+
+// Convert to 1-indexed
+function josephus(n, k) {
+    return josephusRecursive(n, k) + 1;
+}</code></pre>
+            <div class="complexity">
+                <strong>Time Complexity:</strong> O(n) | <strong>Space Complexity:</strong> O(n) due to recursion stack
+            </div>
+        </div>
+        
+        <div class="method">
+            <h2>2. Iterative Solution <span class="badge">Efficient</span></h2>
+            <p>Space-optimized iterative version that avoids recursion stack overflow.</p>
+            <pre><code>// Iterative solution - more memory efficient
+function josephusIterative(n, k) {
+    let result = 0;
+    for (let i = 2; i <= n; i++) {
+        result = (result + k) % i;
+    }
+    return result + 1; // Convert to 1-indexed
+}</code></pre>
+            <div class="complexity">
+                <strong>Time Complexity:</strong> O(n) | <strong>Space Complexity:</strong> O(1)
+            </div>
+        </div>
+        
+        <div class="method">
+            <h2>3. Binary Shift Solution <span class="badge">k=2 Only</span></h2>
+            <p>Elegant O(1) solution when k=2 using bit manipulation.</p>
+            <pre><code>// For k=2 only - using bit manipulation
+function josephusBinary(n) {
+    // Find the highest power of 2 less than or equal to n
+    let powerOf2 = 1;
+    while (powerOf2 <= n) {
+        powerOf2 <<= 1;
+    }
+    powerOf2 >>= 1; // Get the actual highest power of 2
+    
+    // L = n - 2^m, result = 2*L + 1
+    let L = n - powerOf2;
+    return 2 * L + 1;
+}
+
+// Alternative bit manipulation approach
+function josephusBinaryAlt(n) {
+    // Left rotate the binary representation
+    let highestBit = 1;
+    while (highestBit <= n) {
+        highestBit <<= 1;
+    }
+    highestBit >>= 1;
+    
+    return ((n - highestBit) << 1) + 1;
+}</code></pre>
+            <div class="complexity">
+                <strong>Time Complexity:</strong> O(log n) | <strong>Space Complexity:</strong> O(1)
+            </div>
+        </div>
+        
+        <div class="method">
+            <h2>4. Simulation Solution <span class="badge">Visual</span></h2>
+            <p>Step-by-step simulation that shows the elimination process.</p>
+            <pre><code>// Simulation approach - good for understanding and visualization
+function josephusSimulation(n, k) {
+    let people = [];
+    for (let i = 1; i <= n; i++) {
+        people.push(i);
+    }
+    
+    let currentIndex = 0;
+    let steps = [];
+    
+    while (people.length > 1) {
+        // Find the index of person to eliminate
+        let eliminateIndex = (currentIndex + k - 1) % people.length;
+        let eliminated = people[eliminateIndex];
+        
+        steps.push({
+            remaining: [...people],
+            eliminated: eliminated,
+            position: eliminateIndex
+        });
+        
+        people.splice(eliminateIndex, 1);
+        currentIndex = eliminateIndex % people.length;
+    }
+    
+    return {
+        survivor: people[0],
+        steps: steps
+    };
+}</code></pre>
+            <div class="complexity">
+                <strong>Time Complexity:</strong> O(n²) | <strong>Space Complexity:</strong> O(n)
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>🎮 Interactive Demo</h2>
+            <div class="input-group">
+                <label>
+                    Number of people (n):
+                    <input type="number" id="nInput" value="10" min="1" max="50">
+                </label>
+                <label>
+                    Skip count (k):
+                    <input type="number" id="kInput" value="2" min="1" max="10">
+                </label>
+                <label>
+                    Method:
+                    <select id="methodSelect">
+                        <option value="recursive">Recursive</option>
+                        <option value="iterative">Iterative</option>
+                        <option value="binary">Binary (k=2 only)</option>
+                        <option value="simulation">Simulation</option>
+                    </select>
+                </label>
+            </div>
+            <button onclick="solve()">🚀 Solve Josephus Problem</button>
+            <button onclick="visualize()">👁️ Visualize Process</button>
+            
+            <div id="results" class="results" style="display: none;">
+                <h3>Results:</h3>
+                <div id="resultContent"></div>
+            </div>
+            
+            <div id="visualization" class="visualization"></div>
+            <div id="steps" class="step-by-step" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        // Implementation of all methods
+        function josephusRecursive(n, k) {
+            if (n === 1) return 0;
+            return (josephusRecursive(n - 1, k) + k) % n;
+        }
+        
+        function josephusIterative(n, k) {
+            let result = 0;
+            for (let i = 2; i <= n; i++) {
+                result = (result + k) % i;
+            }
+            return result + 1;
+        }
+        
+        function josephusBinary(n) {
+            let powerOf2 = 1;
+            while (powerOf2 <= n) {
+                powerOf2 <<= 1;
+            }
+            powerOf2 >>= 1;
+            let L = n - powerOf2;
+            return 2 * L + 1;
+        }
+        
+        function josephusSimulation(n, k) {
+            let people = [];
+            for (let i = 1; i <= n; i++) {
+                people.push(i);
+            }
+            
+            let currentIndex = 0;
+            let steps = [];
+            
+            while (people.length > 1) {
+                let eliminateIndex = (currentIndex + k - 1) % people.length;
+                let eliminated = people[eliminateIndex];
+                
+                steps.push({
+                    remaining: [...people],
+                    eliminated: eliminated,
+                    position: eliminateIndex
+                });
+                
+                people.splice(eliminateIndex, 1);
+                currentIndex = eliminateIndex % people.length;
+            }
+            
+            return {
+                survivor: people[0],
+                steps: steps
+            };
+        }
+        
+        function solve() {
+            const n = parseInt(document.getElementById('nInput').value);
+            const k = parseInt(document.getElementById('kInput').value);
+            const method = document.getElementById('methodSelect').value;
+            
+            let result;
+            let executionTime;
+            
+            const startTime = performance.now();
+            
+            switch (method) {
+                case 'recursive':
+                    result = josephusRecursive(n, k) + 1;
+                    break;
+                case 'iterative':
+                    result = josephusIterative(n, k);
+                    break;
+                case 'binary':
+                    if (k !== 2) {
+                        alert('Binary method only works for k=2');
+                        return;
+                    }
+                    result = josephusBinary(n);
+                    break;
+                case 'simulation':
+                    const simResult = josephusSimulation(n, k);
+                    result = simResult.survivor;
+                    break;
+            }
+            
+            executionTime = performance.now() - startTime;
+            
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('resultContent').innerHTML = `
+                <div class="highlight">
+                    <strong>🎯 Safe Position: ${result}</strong><br>
+                    <em>With ${n} people and eliminating every ${k}th person, position ${result} will survive!</em><br>
+                    <small>Execution time: ${executionTime.toFixed(4)}ms</small>
+                </div>
+            `;
+        }
+        
+        function visualize() {
+            const n = parseInt(document.getElementById('nInput').value);
+            const k = parseInt(document.getElementById('kInput').value);
+            
+            if (n > 20) {
+                alert('Visualization limited to 20 people for clarity');
+                return;
+            }
+            
+            const simResult = josephusSimulation(n, k);
+            const visualization = document.getElementById('visualization');
+            const stepsDiv = document.getElementById('steps');
+            
+            // Create initial circle
+            visualization.innerHTML = '';
+            for (let i = 1; i <= n; i++) {
+                const person = document.createElement('div');
+                person.className = 'person alive';
+                person.textContent = i;
+                person.id = `person-${i}`;
+                visualization.appendChild(person);
+            }
+            
+            // Show steps
+            let stepText = `<h4>Elimination Steps:</h4>`;
+            simResult.steps.forEach((step, index) => {
+                stepText += `<div>Step ${index + 1}: Eliminate person ${step.eliminated} (remaining: ${step.remaining.join(', ')})</div>`;
+            });
+            stepText += `<div><strong>🏆 Survivor: Person ${simResult.survivor}</strong></div>`;
+            
+            stepsDiv.innerHTML = stepText;
+            stepsDiv.style.display = 'block';
+            
+            // Animate eliminations
+            let stepIndex = 0;
+            const animateStep = () => {
+                if (stepIndex < simResult.steps.length) {
+                    const step = simResult.steps[stepIndex];
+                    const personElement = document.getElementById(`person-${step.eliminated}`);
+                    if (personElement) {
+                        personElement.className = 'person eliminated';
+                    }
+                    stepIndex++;
+                    setTimeout(animateStep, 1000);
+                } else {
+                    // Highlight survivor
+                    const survivor = document.getElementById(`person-${simResult.survivor}`);
+                    if (survivor) {
+                        survivor.className = 'person survivor';
+                    }
+                }
+            };
+            
+            setTimeout(animateStep, 1000);
+        }
+    </script>
+</body>
+</html>
