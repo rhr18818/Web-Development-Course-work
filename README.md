@@ -112,7 +112,7 @@
 | Day_108 | 20-06-2025 | Motivation | ✅ | ❌ |  |  |
 | Day_109 | 23-06-2025 | DSA | ❌ | ❌ | Stack and Queue - Problems |  |
 | Day_110 | 24-06-2025 | DSA | ✅ | ✅ | Stack and Queue - Problems |  |
-| Day_111 | 25-06-2025 | DSA | ❌ | ✅ | Advance Recursion.. |  |
+| Day_111 | 25-06-2025 | DSA | ❌ | ✅ | Advance Recursion.. | Yes |
 | Day_112 | 26-06-2025 | Animations | ✅ | ❌ | Theory:Ui,Ux,Gsap,FramerMotion,Lenis/Locomotive,SwiperJS |  |
 | Day_113 | 27-06-2025 | DSA | ❌ | ✅ |  |  |
 | Day_114 | 28-06-2025 | Motivation | ❌ | ❌ |  |  |
@@ -120,4 +120,5 @@
 | Day_116 | 01-07-2025 | Backend | ❌ | ✅ |  |  |
 | Day_117 | 02-07-2025 | Backend | ❌ | ✅ |  |  |
 | Day_118 | 03-07-2025 | Backend | ❌ | ✅ |  |  |
-| Day_119 | 04-07-2025 | DSA | ❌ | ✅ |  |  |
+| Day_119 | 04-07-2025 | DSA | ❌ | ✅ | Advance Recursion.. |  |
+| Day_120 | 05-07-2025 | DSA | ✅ | ✅ | Advance Recursion.. |  |
