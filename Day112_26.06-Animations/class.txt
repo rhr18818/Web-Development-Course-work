@@ -12,3 +12,6 @@ Resources :
 3: 
 
 Spline.design--> 3D interaction Design
+
+
+`Theory:Ui,Ux,Gsap,FramerMotion,Lenis/Locomotive,SwiperJS`
