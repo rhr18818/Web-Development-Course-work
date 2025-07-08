@@ -1080,8 +1080,17 @@
     "gap_covered": ""
   },
   {
-    "class_no": "Day_120",
-    "date": "05-07-2025",
+    "class_no": "Day_121",
+    "date": "07-07-2025",
+    "topic": "Backend",
+    "notes": "",
+    "attended": true,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_122",
+    "date": "08-07-2025",
     "topic": "Backend",
     "notes": "",
     "attended": true,
