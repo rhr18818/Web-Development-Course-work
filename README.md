@@ -122,3 +122,5 @@
 | Day_118 | 03-07-2025 | Backend | ❌ | ✅ |  | Yes |
 | Day_119 | 04-07-2025 | DSA | ❌ | ✅ | Advance Recursion.. |  |
 | Day_120 | 05-07-2025 | DSA | ✅ | ✅ | Advance Recursion.. |  |
+| Day_121 | 07-07-2025 | Backend | ✅ | ✅ |  |  |
+| Day_122 | 08-07-2025 | Backend | ✅ | ✅ |  |  |
