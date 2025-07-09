@@ -1096,6 +1096,15 @@
     "attended": true,
     "needs_revision": true,
     "gap_covered": ""
+  },
+  {
+    "class_no": "Day_122",
+    "date": "08-07-2025",
+    "topic": "DSA",
+    "notes": "Tree",
+    "attended": true,
+    "needs_revision": true,
+    "gap_covered": ""
   }
 
 ]
