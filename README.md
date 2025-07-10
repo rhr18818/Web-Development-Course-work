@@ -124,4 +124,5 @@
 | Day_120 | 05-07-2025 | DSA | ✅ | ✅ | Advance Recursion.. |  |
 | Day_121 | 07-07-2025 | Backend | ✅ | ✅ |  |  |
 | Day_122 | 08-07-2025 | Backend | ✅ | ✅ |  |  |
-| Day_122 | 08-07-2025 | DSA | ✅ | ✅ | Tree |  |
+| Day_122 | 09-07-2025 | DSA | ✅ | ✅ | Tree |  |
+| Day_123 | 10-07-2025 | DSA | ✅ | ✅ | Tree |  |
