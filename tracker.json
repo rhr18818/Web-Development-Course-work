@@ -1098,7 +1098,7 @@
     "gap_covered": ""
   },
   {
-    "class_no": "Day_122",
+    "class_no": "Day_123",
     "date": "09-07-2025",
     "topic": "DSA",
     "notes": "Tree",
@@ -1107,8 +1107,17 @@
     "gap_covered": ""
   },
   {
-    "class_no": "Day_123",
+    "class_no": "Day_124",
     "date": "10-07-2025",
+    "topic": "DSA",
+    "notes": "Tree",
+    "attended": true,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_125",
+    "date": "11-07-2025",
     "topic": "DSA",
     "notes": "Tree",
     "attended": true,
