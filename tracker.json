@@ -1123,6 +1123,15 @@
     "attended": true,
     "needs_revision": true,
     "gap_covered": ""
+  },
+  {
+    "class_no": "Day_126",
+    "date": "12-07-2025",
+    "topic": "Motivation",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
   }
 
 ]
