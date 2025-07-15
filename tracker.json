@@ -1127,7 +1127,25 @@
   {
     "class_no": "Day_126",
     "date": "12-07-2025",
-    "topic": "Motivation",
+    "topic": "Resume by Dhanesh Bhai",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_127",
+    "date": "14-07-2025",
+    "topic": "Backend",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_128",
+    "date": "15-07-2025",
+    "topic": "Backend",
     "notes": "",
     "attended": false,
     "needs_revision": true,
