@@ -127,4 +127,7 @@
 | Day_123 | 09-07-2025 | DSA | ✅ | ✅ | Tree |  |
 | Day_124 | 10-07-2025 | DSA | ✅ | ✅ | Tree |  |
 | Day_125 | 11-07-2025 | DSA | ✅ | ✅ | Tree |  |
-| Day_126 | 12-07-2025 | Motivation | ❌ | ✅ |  |  |
+| Day_126 | 12-07-2025 | Resume by Dhanesh Bhai | ❌ | ✅ |  |  |
+| Day_127 | 14-07-2025 | Backend | ❌ | ✅ |  |  |
+| Day_128 | 15-07-2025 | Backend | ❌ | ✅ |  |  |
+| Day_129 | 16-07-2025 | Backend | ❌ | ✅ |  |  |
