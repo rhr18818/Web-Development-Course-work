@@ -6,6 +6,7 @@ const server = express()
 connectToDB()
 
 server.use(express.json())
+
 server.post('/notes',async(req,res)=>{
     const {title,content} = req.body
     console.log(title,content);
@@ -18,6 +19,35 @@ server.post('/notes',async(req,res)=>{
         message:"Note Created Successfully .!"
     })
     
+})
+server.get('/notes',async(req,res)=>{
+    const notes = await noteModel.find()
+    res.json({
+        message:"Note fetched Successfully .!",
+        notes
+    })
+})
+
+server.delete('/notes/:id',async(req,res)=>{
+    const noteId = req.params.id
+    await noteModel.findOneAndDelete({
+        _id: noteId
+    })
+    res.json({
+        message: " Note Deleted Successfully ! "
+    })
+})
+server.patch('/notes/:id',async(req,res)=>{
+    const noteId = req.params.id
+    const {title} = req.body
+    await noteModel.findOneAndUpdate({
+        _id: noteId
+    },{
+        title
+    })
+    res.json({
+        message: " Note Updated Successfully ! "
+    })
 })
 
 server.listen(3000,()=>{
