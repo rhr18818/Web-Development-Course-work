@@ -9,7 +9,7 @@ This is your chance to apply your skills in React, design something beautiful, a
 ## 🎯 THEME: Build a Website for an Influencer or Start-up
 
 You’ve seen your favorite influencers and growing start-ups all over Instagram, YouTube, Twitter — but have you ever thought, what would their **personal brand or company website** look like if you designed it?
-
+cd bach
 In this hackathon, your job is to **pick any Indian influencer or start-up** and **build a modern, aesthetic, and functional brand website** for them. Think of it like a real freelance project, where you’re the only developer in charge.
 
 Be creative. Be bold. Make it feel like it belongs on the internet in 2025.
