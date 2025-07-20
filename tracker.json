@@ -1168,6 +1168,15 @@
     "attended": false,
     "needs_revision": true,
     "gap_covered": ""
+  },
+  {
+    "class_no": "Day_131",
+    "date": "18-07-2025",
+    "topic": "Backend",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
   }
 
 ]
