@@ -1185,7 +1185,7 @@
     "notes": "",
     "attended": false,
     "needs_revision": true,
-    "gap_covered": ""
+    "gap_covered": "Yes"
   },
   {
     "class_no": "Day_133",
@@ -1226,6 +1226,42 @@
   {
     "class_no": "Day_137",
     "date": "25-07-2025",
+    "topic": "Backend",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_138",
+    "date": "26-07-2025",
+    "topic": "Backend",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_139",
+    "date": "28-07-2025",
+    "topic": "Backend",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_140",
+    "date": "29-07-2025",
+    "topic": "Backend",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
+  },
+  {
+    "class_no": "Day_141",
+    "date": "30-07-2025",
     "topic": "Backend",
     "notes": "",
     "attended": false,
