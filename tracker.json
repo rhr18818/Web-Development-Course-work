@@ -1267,6 +1267,15 @@
     "attended": false,
     "needs_revision": true,
     "gap_covered": ""
+  },
+  {
+    "class_no": "Day_142",
+    "date": "04-08-2025",
+    "topic": "Backend",
+    "notes": "",
+    "attended": true,
+    "needs_revision": true,
+    "gap_covered": ""
   }
 
 ]
