@@ -1312,6 +1312,15 @@
     "attended": false,
     "needs_revision": true,
     "gap_covered": ""
+  },
+  {
+    "class_no": "Last_Live",
+    "date": "09-22-2025",
+    "topic": "Backend",
+    "notes": "",
+    "attended": false,
+    "needs_revision": true,
+    "gap_covered": ""
   }
 
 ]
