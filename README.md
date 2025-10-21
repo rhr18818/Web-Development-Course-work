@@ -1,5 +1,3 @@
-[**Documentation Style to Follow**](https://vincent.codes.finance/posts/documents-llm/)
-
 # 📅 Course Progress Tracker (Jan–Jun 2025)
 
 | # | Date | 🏷️ Topic | 🎥 Attended? | 🔁 Revision? | 📝 Notes | ⏳ Gap Covered? |
