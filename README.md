@@ -27,7 +27,7 @@
 | Day_23 | 20-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
 | Day_24 | 21-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
 | Day_25 | 22-02-2025 | Basic | ✅ | ❌ | 🖊️ Took handwritten notes...! |  |
-| Day_26 | 24-02-2025 | DSA | ✅ | ❌ |  |  |
+| Day_26 | 24-02-2025 | DSA | ✅ | ❌ |  | Revising --01.11.2025 |
 | Day_27 | 25-02-2025 | DSA | ✅ | ❌ |  |  |
 | Day_28 | 26-02-2025 | DSA | ✅ | ❌ |  |  |
 | Day_29 | 27-02-2025 | DSA | ✅ | ❌ |  |  |
